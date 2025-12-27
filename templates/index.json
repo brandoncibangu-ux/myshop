@@ -53,31 +53,14 @@
     "rich_text_jTNeWr": {
       "type": "rich-text",
       "blocks": {
-        "subheading_jhDNir": {
-          "type": "subheading",
-          "settings": {
-            "text": "Subheading"
-          }
-        },
-        "heading_w6qAC8": {
-          "type": "heading",
-          "settings": {
-            "text": "De la lingerie artisanale et personnalisée, conçue pour rendre chacune de vos nuits inoubliables.",
-            "heading_tag": "h6",
-            "text_color": "",
-            "gradient": ""
-          }
-        },
         "richtext_JY8RnY": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+            "content": "<p>De la <strong>lingerie artisanale et personnalisée,</strong> conçue pour rendre chacune de vos nuits inoubliables.</p>"
           }
         }
       },
       "block_order": [
-        "subheading_jhDNir",
-        "heading_w6qAC8",
         "richtext_JY8RnY"
       ],
       "name": "Rich text",
