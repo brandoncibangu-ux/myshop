@@ -221,26 +221,28 @@
           "type": "item",
           "settings": {
             "icon": "picto-coupon",
-            "mobile_icon_width": 24,
-            "icon_width": 32,
+            "custom_icon": "shopify://shop_images/Quality-2.webp",
+            "mobile_icon_width": 108,
+            "icon_width": 120,
             "icon_background_type": "circle",
-            "icon_background": "",
+            "icon_background": "#ffffff",
             "icon_color": "",
-            "title": "Customer service",
-            "content": "<p>We are available from monday to friday to answer your questions.</p>"
+            "title": "Qualité",
+            "content": "<p>Succombez à un confort et un luxe sans égal. Nos ensembles de lingerie sont méticuleusement confectionnés avec une exigence de qualité exceptionnelle.</p>"
           }
         },
         "item_RPwNXE": {
           "type": "item",
           "settings": {
             "icon": "picto-coupon",
-            "mobile_icon_width": 24,
-            "icon_width": 32,
+            "custom_icon": "shopify://shop_images/Uniqueness-2.gif",
+            "mobile_icon_width": 88,
+            "icon_width": 120,
             "icon_background_type": "circle",
-            "icon_background": "",
+            "icon_background": "#ffffff",
             "icon_color": "",
-            "title": "Secure payment",
-            "content": "<p>Your payment information is processed securely.</p>"
+            "title": "Unique, tout comme vous",
+            "content": "<p>Parce que vous êtes unique, chaque création est réalisée sur mesure. Nos strings personnalisés subliment votre individualité et annoncent une soirée mémorable.</p>"
           }
         }
       },
