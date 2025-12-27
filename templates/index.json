@@ -53,6 +53,15 @@
     "rich_text_jTNeWr": {
       "type": "rich-text",
       "blocks": {
+        "heading_EAwHjb": {
+          "type": "heading",
+          "settings": {
+            "text": "Découvrez la lingerie personalisable",
+            "heading_tag": "h3",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
         "richtext_JY8RnY": {
           "type": "richtext",
           "settings": {
@@ -61,6 +70,7 @@
         }
       },
       "block_order": [
+        "heading_EAwHjb",
         "richtext_JY8RnY"
       ],
       "name": "Rich text",
