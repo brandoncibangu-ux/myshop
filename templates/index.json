@@ -50,6 +50,46 @@
         "background_gradient": "linear-gradient(60deg, rgba(60, 65, 68, 1), rgba(23, 29, 33, 1) 98%)"
       }
     },
+    "rich_text_jTNeWr": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_jhDNir": {
+          "type": "subheading",
+          "settings": {
+            "text": "Subheading"
+          }
+        },
+        "heading_w6qAC8": {
+          "type": "heading",
+          "settings": {
+            "text": "De la lingerie artisanale et personnalisée, conçue pour rendre chacune de vos nuits inoubliables.",
+            "heading_tag": "h6",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_JY8RnY": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_jhDNir",
+        "heading_w6qAC8",
+        "richtext_JY8RnY"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "collection-list": {
       "type": "collection-list",
       "blocks": {
@@ -117,31 +157,6 @@
         "text_color": "",
         "heading_color": "",
         "heading_gradient": ""
-      }
-    },
-    "featured-collection": {
-      "type": "featured-collection",
-      "settings": {
-        "collection": "",
-        "products": [],
-        "full_width": true,
-        "stack_products": false,
-        "show_progress_bar": false,
-        "products_count": 6,
-        "products_per_row_mobile": "2",
-        "products_per_row_desktop": 4,
-        "subheading": "",
-        "title": "Featured collection",
-        "content": "",
-        "link_url": "",
-        "link_text": "View all",
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": "",
-        "product_card_background": "",
-        "product_card_text_color": ""
       }
     },
     "impact-text": {
@@ -645,8 +660,8 @@
   },
   "order": [
     "slideshow",
+    "rich_text_jTNeWr",
     "collection-list",
-    "featured-collection",
     "impact-text",
     "image-with-text-overlay",
     "media-grid",
