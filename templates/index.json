@@ -208,13 +208,13 @@
           "settings": {
             "icon": "picto-happy",
             "custom_icon": "shopify://shop_images/Crazy-BF-Guarantee-2.gif",
-            "mobile_icon_width": 68,
-            "icon_width": 76,
+            "mobile_icon_width": 92,
+            "icon_width": 44,
             "icon_background_type": "square",
             "icon_background": "#ffffff",
             "icon_color": "",
             "title": "La Garantie « Boyfriend Crazy »",
-            "content": "<p>Free worldwide shipping and returns - customs and duties taxes included</p>"
+            "content": "<p>Découvrez notre garantie « Boyfriend Crazy ». En voyant son prénom sur vous, il ne va pas seulement craquer pour vous... il va devenir complètement fou ..</p>"
           }
         },
         "item_yVFQnq": {
@@ -251,12 +251,12 @@
       ],
       "name": "Text with icons",
       "settings": {
-        "full_width": true,
+        "full_width": false,
         "stack_on_mobile": false,
         "title": "",
         "heading_tag": "h5",
         "text_alignment": "center",
-        "icon_spacing": "medium",
+        "icon_spacing": "small",
         "background": "#ffffff",
         "background_gradient": "",
         "text_color": ""
