@@ -264,44 +264,56 @@
         "text_color": ""
       }
     },
-    "image-with-text-overlay": {
-      "type": "image-with-text-overlay",
+    "press_KYYrwe": {
+      "type": "press",
       "blocks": {
-        "1664424230c4756b0e-0": {
-          "type": "subheading",
+        "quote_AqmWh4": {
+          "type": "quote",
           "settings": {
-            "text": "Subheading"
+            "logo_width": 100,
+            "author": "Alexandra.D",
+            "content": "'Jai hésité avant de commander après les avoir vus sur Insta, mais tout ce que je peux dire c'est : WOW ! 🤩 J'ai trop hâte de lui montrer. Les filles, attention : il risque de retomber amoureux de vous comme au premier jour !",
+            "show_rating": true,
+            "rating": 5
           }
         },
-        "1664424230c4756b0e-1": {
-          "type": "heading",
+        "quote_dyV3iB": {
+          "type": "quote",
           "settings": {
-            "text": "Image with text overlay",
-            "heading_tag": "h1"
+            "logo_width": 100,
+            "author": "",
+            "content": "Littéralement FAN de ces strings. Il ne pouvait plus me lâcher <3",
+            "show_rating": true,
+            "rating": 5
           }
         },
-        "1664424230c4756b0e-2": {
-          "type": "richtext",
+        "quote_QLcnVp": {
+          "type": "quote",
           "settings": {
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+            "logo_width": 100,
+            "author": "",
+            "content": "Write some content about what they says about your store.",
+            "show_rating": true,
+            "rating": 4
           }
         }
       },
       "block_order": [
-        "1664424230c4756b0e-0",
-        "1664424230c4756b0e-1",
-        "1664424230c4756b0e-2"
+        "quote_AqmWh4",
+        "quote_dyV3iB",
+        "quote_QLcnVp"
       ],
+      "name": "Press",
       "settings": {
-        "full_width": true,
-        "allow_transparent_header": false,
-        "enable_parallax": false,
-        "image_size": "auto",
-        "mobile_text_position": "place-self-center text-center",
-        "desktop_text_position": "sm:place-self-center sm:text-center",
-        "text_color": "#ffffff",
-        "overlay_color": "#000000",
-        "overlay_opacity": 30
+        "full_width": false,
+        "content_size": "small",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "logo_item_background": "",
+        "logo_item_border": ""
       }
     },
     "media-grid": {
@@ -734,7 +746,7 @@
     "impact-text",
     "collection-list",
     "text_with_icons_JaRnwD",
-    "image-with-text-overlay",
+    "press_KYYrwe",
     "media-grid",
     "before-after-image",
     "press",
