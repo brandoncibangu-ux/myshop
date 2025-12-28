@@ -1,6 +1,478 @@
+{% doc %}
+  @prompt
+    can you generate a custom tex field? I want placeholder text and small title for the field. It needs to be linked to my product
+    
+    , I need a totalf of 4 field all link to the product, I dont need a form. I need 4 custom field for product personalization
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-product-personalization-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .ai-product-personalization__container-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    gap: {{ block.settings.field_spacing }}px;
+    width: 100%;
+  }
+
+  .ai-product-personalization__field-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+  }
+
+  .ai-product-personalization__label-{{ ai_gen_id }} {
+    font-size: {{ block.settings.label_size }}px;
+    font-weight: {{ block.settings.label_weight }};
+    color: {{ block.settings.label_color }};
+    margin: 0;
+  }
+
+  .ai-product-personalization__input-{{ ai_gen_id }} {
+    width: 100%;
+    padding: {{ block.settings.input_padding }}px;
+    font-size: {{ block.settings.input_font_size }}px;
+    color: {{ block.settings.input_text_color }};
+    background-color: {{ block.settings.input_background }};
+    border: {{ block.settings.border_width }}px solid {{ block.settings.border_color }};
+    border-radius: {{ block.settings.input_border_radius }}px;
+    transition: border-color 0.3s ease;
+  }
+
+  .ai-product-personalization__input-{{ ai_gen_id }}:focus {
+    outline: none;
+    border-color: {{ block.settings.border_focus_color }};
+  }
+
+  .ai-product-personalization__input-{{ ai_gen_id }}::placeholder {
+    color: {{ block.settings.placeholder_color }};
+    opacity: 0.7;
+  }
+
+  .ai-product-personalization__char-count-{{ ai_gen_id }} {
+    font-size: 12px;
+    color: {{ block.settings.label_color }};
+    opacity: 0.6;
+    text-align: right;
+  }
+{% endstyle %}
+
+<product-personalization-{{ ai_gen_id }}
+  class="ai-product-personalization-{{ ai_gen_id }}"
+  {{ block.shopify_attributes }}
+>
+  <div class="ai-product-personalization__container-{{ ai_gen_id }}">
+    {% for i in (1..4) %}
+      {% liquid
+        assign field_enabled_key = 'field_' | append: i | append: '_enabled'
+        assign field_label_key = 'field_' | append: i | append: '_label'
+        assign field_placeholder_key = 'field_' | append: i | append: '_placeholder'
+        assign field_property_key = 'field_' | append: i | append: '_property_name'
+        assign field_required_key = 'field_' | append: i | append: '_required'
+        assign field_max_chars_key = 'field_' | append: i | append: '_max_characters'
+
+        assign field_enabled = block.settings[field_enabled_key]
+        assign field_label = block.settings[field_label_key]
+        assign field_placeholder = block.settings[field_placeholder_key]
+        assign field_property = block.settings[field_property_key]
+        assign field_required = block.settings[field_required_key]
+        assign field_max_chars = block.settings[field_max_chars_key]
+      %}
+
+      {% if field_enabled %}
+        <div class="ai-product-personalization__field-{{ ai_gen_id }}">
+          {% if field_label != blank %}
+            <label
+              for="ai-product-personalization-{{ i }}-{{ ai_gen_id }}"
+              class="ai-product-personalization__label-{{ ai_gen_id }}"
+            >
+              {{ field_label }}
+              {% if field_required %}
+                <span aria-label="required">*</span>
+              {% endif %}
+            </label>
+          {% endif %}
+
+          <input
+            type="text"
+            id="ai-product-personalization-{{ i }}-{{ ai_gen_id }}"
+            name="properties[{{ field_property }}]"
+            class="ai-product-personalization__input-{{ ai_gen_id }}"
+            placeholder="{{ field_placeholder }}"
+            {% if field_required %}required{% endif %}
+            {% if field_max_chars > 0 %}maxlength="{{ field_max_chars }}"{% endif %}
+            aria-label="{{ field_label | default: field_placeholder }}"
+            data-field-index="{{ i }}"
+          >
+
+          {% if block.settings.show_character_count and field_max_chars > 0 %}
+            <div class="ai-product-personalization__char-count-{{ ai_gen_id }}">
+              <span class="ai-product-personalization__current-count-{{ i }}-{{ ai_gen_id }}">0</span> / {{ field_max_chars }}
+            </div>
+          {% endif %}
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</product-personalization-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class ProductPersonalization{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+      }
+
+      connectedCallback() {
+        this.inputs = this.querySelectorAll('.ai-product-personalization__input-{{ ai_gen_id }}');
+        
+        this.inputs.forEach(function(input) {
+          const fieldIndex = input.getAttribute('data-field-index');
+          const charCountDisplay = this.querySelector('.ai-product-personalization__current-count-' + fieldIndex + '-{{ ai_gen_id }}');
+          
+          if (charCountDisplay) {
+            input.addEventListener('input', function() {
+              charCountDisplay.textContent = input.value.length;
+            });
+          }
+        }.bind(this));
+      }
+    }
+
+    customElements.define('product-personalization-{{ ai_gen_id }}', ProductPersonalization{{ ai_gen_id }});
+  })();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Product personalization",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "General settings"
+    },
+    {
+      "type": "range",
+      "id": "field_spacing",
+      "label": "Space between fields",
+      "min": 8,
+      "max": 32,
+      "step": 4,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "checkbox",
+      "id": "show_character_count",
+      "label": "Show character count",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Field 1"
+    },
+    {
+      "type": "checkbox",
+      "id": "field_1_enabled",
+      "label": "Enable field 1",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "field_1_label",
+      "label": "Label",
+      "default": "Personalization text"
+    },
+    {
+      "type": "text",
+      "id": "field_1_placeholder",
+      "label": "Placeholder",
+      "default": "Enter text here"
+    },
+    {
+      "type": "text",
+      "id": "field_1_property_name",
+      "label": "Property name",
+      "default": "Personalization 1"
+    },
+    {
+      "type": "checkbox",
+      "id": "field_1_required",
+      "label": "Required",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "field_1_max_characters",
+      "label": "Maximum characters",
+      "info": "Set to 0 for no limit",
+      "min": 0,
+      "max": 500,
+      "step": 10,
+      "default": 50
+    },
+    {
+      "type": "header",
+      "content": "Field 2"
+    },
+    {
+      "type": "checkbox",
+      "id": "field_2_enabled",
+      "label": "Enable field 2",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "field_2_label",
+      "label": "Label",
+      "default": "Additional text"
+    },
+    {
+      "type": "text",
+      "id": "field_2_placeholder",
+      "label": "Placeholder",
+      "default": "Enter text here"
+    },
+    {
+      "type": "text",
+      "id": "field_2_property_name",
+      "label": "Property name",
+      "default": "Personalization 2"
+    },
+    {
+      "type": "checkbox",
+      "id": "field_2_required",
+      "label": "Required",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "field_2_max_characters",
+      "label": "Maximum characters",
+      "info": "Set to 0 for no limit",
+      "min": 0,
+      "max": 500,
+      "step": 10,
+      "default": 50
+    },
+    {
+      "type": "header",
+      "content": "Field 3"
+    },
+    {
+      "type": "checkbox",
+      "id": "field_3_enabled",
+      "label": "Enable field 3",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "field_3_label",
+      "label": "Label",
+      "default": "Custom message"
+    },
+    {
+      "type": "text",
+      "id": "field_3_placeholder",
+      "label": "Placeholder",
+      "default": "Enter your message"
+    },
+    {
+      "type": "text",
+      "id": "field_3_property_name",
+      "label": "Property name",
+      "default": "Personalization 3"
+    },
+    {
+      "type": "checkbox",
+      "id": "field_3_required",
+      "label": "Required",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "field_3_max_characters",
+      "label": "Maximum characters",
+      "info": "Set to 0 for no limit",
+      "min": 0,
+      "max": 500,
+      "step": 10,
+      "default": 100
+    },
+    {
+      "type": "header",
+      "content": "Field 4"
+    },
+    {
+      "type": "checkbox",
+      "id": "field_4_enabled",
+      "label": "Enable field 4",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "field_4_label",
+      "label": "Label",
+      "default": "Special note"
+    },
+    {
+      "type": "text",
+      "id": "field_4_placeholder",
+      "label": "Placeholder",
+      "default": "Any special requests?"
+    },
+    {
+      "type": "text",
+      "id": "field_4_property_name",
+      "label": "Property name",
+      "default": "Personalization 4"
+    },
+    {
+      "type": "checkbox",
+      "id": "field_4_required",
+      "label": "Required",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "field_4_max_characters",
+      "label": "Maximum characters",
+      "info": "Set to 0 for no limit",
+      "min": 0,
+      "max": 500,
+      "step": 10,
+      "default": 100
+    },
+    {
+      "type": "header",
+      "content": "Label style"
+    },
+    {
+      "type": "range",
+      "id": "label_size",
+      "label": "Label size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "select",
+      "id": "label_weight",
+      "label": "Label weight",
+      "options": [
+        {
+          "value": "400",
+          "label": "Normal"
+        },
+        {
+          "value": "500",
+          "label": "Medium"
+        },
+        {
+          "value": "600",
+          "label": "Semi-bold"
+        },
+        {
+          "value": "700",
+          "label": "Bold"
+        }
+      ],
+      "default": "600"
+    },
+    {
+      "type": "color",
+      "id": "label_color",
+      "label": "Label color",
+      "default": "#1a1a1a"
+    },
+    {
+      "type": "header",
+      "content": "Input style"
+    },
+    {
+      "type": "range",
+      "id": "input_padding",
+      "label": "Input padding",
+      "min": 8,
+      "max": 24,
+      "step": 2,
+      "unit": "px",
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "input_font_size",
+      "label": "Input font size",
+      "min": 12,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "color",
+      "id": "input_text_color",
+      "label": "Input text color",
+      "default": "#1a1a1a"
+    },
+    {
+      "type": "color",
+      "id": "input_background",
+      "label": "Input background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "placeholder_color",
+      "label": "Placeholder color",
+      "default": "#999999"
+    },
+    {
+      "type": "range",
+      "id": "input_border_radius",
+      "label": "Border radius",
+      "min": 0,
+      "max": 20,
+      "step": 2,
+      "unit": "px",
+      "default": 8
+    },
+    {
+      "type": "range",
+      "id": "border_width",
+      "label": "Border width",
+      "min": 1,
+      "max": 4,
+      "step": 1,
+      "unit": "px",
+      "default": 1
+    },
+    {
+      "type": "color",
+      "id": "border_color",
+      "label": "Border color",
+      "default": "#e0e0e0"
+    },
+    {
+      "type": "color",
+      "id": "border_focus_color",
+      "label": "Border focus color",
+      "default": "#f575b4"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product personalization"
+    }
+  ]
+}
 {% endschema %}
