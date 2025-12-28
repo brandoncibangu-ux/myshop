@@ -1,6 +1,282 @@
+{% doc %}
+  @prompt
+    can you generate a custom tex field? I want placeholder text and small title for the field. 
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-custom-text-field-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+  }
+
+  .ai-custom-text-field__wrapper-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: {{ block.settings.desktop_width_percent }}%;
+    margin: 0 auto;
+  }
+
+  .ai-custom-text-field__label-{{ ai_gen_id }} {
+    font-size: {{ block.settings.label_size }}px;
+    font-weight: {{ block.settings.label_weight }};
+    color: {{ block.settings.label_color }};
+    margin: 0;
+  }
+
+  .ai-custom-text-field__input-{{ ai_gen_id }} {
+    width: 100%;
+    padding: {{ block.settings.input_padding }}px;
+    font-size: {{ block.settings.input_font_size }}px;
+    color: {{ block.settings.input_text_color }};
+    background-color: {{ block.settings.input_background }};
+    border: {{ block.settings.border_width }}px solid {{ block.settings.border_color }};
+    border-radius: {{ block.settings.input_border_radius }}px;
+    transition: border-color 0.3s ease;
+  }
+
+  .ai-custom-text-field__input-{{ ai_gen_id }}::placeholder {
+    color: {{ block.settings.placeholder_color }};
+    opacity: 1;
+  }
+
+  .ai-custom-text-field__input-{{ ai_gen_id }}:focus {
+    outline: none;
+    border-color: {{ block.settings.focus_border_color }};
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-custom-text-field__wrapper-{{ ai_gen_id }} {
+      width: 100%;
+    }
+  }
+{% endstyle %}
+
+<custom-text-field-{{ ai_gen_id }}
+  class="ai-custom-text-field-{{ ai_gen_id }}"
+  {{ block.shopify_attributes }}
+>
+  <div class="ai-custom-text-field__wrapper-{{ ai_gen_id }}">
+    {% if block.settings.field_label != blank %}
+      <label
+        for="ai-text-input-{{ ai_gen_id }}"
+        class="ai-custom-text-field__label-{{ ai_gen_id }}"
+      >
+        {{ block.settings.field_label }}
+      </label>
+    {% endif %}
+    <input
+      type="text"
+      id="ai-text-input-{{ ai_gen_id }}"
+      name="{{ block.settings.field_name }}"
+      class="ai-custom-text-field__input-{{ ai_gen_id }}"
+      placeholder="{{ block.settings.placeholder_text }}"
+      {% if block.settings.required %}required{% endif %}
+      {% if block.settings.max_length > 0 %}maxlength="{{ block.settings.max_length }}"{% endif %}
+    >
+  </div>
+</custom-text-field-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class CustomTextField{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+      }
+
+      connectedCallback() {
+        this.input = this.querySelector('.ai-custom-text-field__input-{{ ai_gen_id }}');
+      }
+    }
+
+    customElements.define('custom-text-field-{{ ai_gen_id }}', CustomTextField{{ ai_gen_id }});
+  })();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Custom text field",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Field settings"
+    },
+    {
+      "type": "text",
+      "id": "field_label",
+      "label": "Field title",
+      "default": "Your name"
+    },
+    {
+      "type": "text",
+      "id": "field_name",
+      "label": "Field name",
+      "default": "custom_field"
+    },
+    {
+      "type": "text",
+      "id": "placeholder_text",
+      "label": "Placeholder text",
+      "default": "Enter your text here"
+    },
+    {
+      "type": "checkbox",
+      "id": "required",
+      "label": "Required field",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "max_length",
+      "min": 0,
+      "max": 500,
+      "step": 10,
+      "label": "Maximum characters",
+      "default": 0
+    },
+    {
+      "type": "header",
+      "content": "Label style"
+    },
+    {
+      "type": "range",
+      "id": "label_size",
+      "min": 10,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Label size",
+      "default": 14
+    },
+    {
+      "type": "select",
+      "id": "label_weight",
+      "label": "Label weight",
+      "options": [
+        {
+          "value": "400",
+          "label": "Normal"
+        },
+        {
+          "value": "500",
+          "label": "Medium"
+        },
+        {
+          "value": "600",
+          "label": "Semi-bold"
+        },
+        {
+          "value": "700",
+          "label": "Bold"
+        }
+      ],
+      "default": "600"
+    },
+    {
+      "type": "color",
+      "id": "label_color",
+      "label": "Label color",
+      "default": "#1a1a1a"
+    },
+    {
+      "type": "header",
+      "content": "Input style"
+    },
+    {
+      "type": "range",
+      "id": "input_padding",
+      "min": 8,
+      "max": 24,
+      "step": 2,
+      "unit": "px",
+      "label": "Input padding",
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "input_font_size",
+      "min": 12,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "label": "Input font size",
+      "default": 14
+    },
+    {
+      "type": "range",
+      "id": "input_border_radius",
+      "min": 0,
+      "max": 24,
+      "step": 2,
+      "unit": "px",
+      "label": "Input border radius",
+      "default": 8
+    },
+    {
+      "type": "color",
+      "id": "input_background",
+      "label": "Input background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "input_text_color",
+      "label": "Input text color",
+      "default": "#1a1a1a"
+    },
+    {
+      "type": "color",
+      "id": "placeholder_color",
+      "label": "Placeholder color",
+      "default": "#999999"
+    },
+    {
+      "type": "header",
+      "content": "Border"
+    },
+    {
+      "type": "range",
+      "id": "border_width",
+      "min": 1,
+      "max": 4,
+      "step": 1,
+      "unit": "px",
+      "label": "Border width",
+      "default": 1
+    },
+    {
+      "type": "color",
+      "id": "border_color",
+      "label": "Border color",
+      "default": "#cccccc"
+    },
+    {
+      "type": "color",
+      "id": "focus_border_color",
+      "label": "Focus border color",
+      "default": "#f575b4"
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "desktop_width_percent",
+      "label": "Desktop width",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom text field"
+    }
+  ]
+}
 {% endschema %}
