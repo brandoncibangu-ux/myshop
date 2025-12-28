@@ -1,6 +1,336 @@
+{% doc %}
+  @prompt
+    can you generate a custom tex field? I want placeholder text and small title for the field. It needs to be linked to my product
+    
+    
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-custom-text-field-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .ai-custom-text-field__wrapper-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+  }
+
+  .ai-custom-text-field__label-{{ ai_gen_id }} {
+    font-size: {{ block.settings.label_size }}px;
+    font-weight: {{ block.settings.label_weight }};
+    color: {{ block.settings.label_color }};
+    margin: 0;
+  }
+
+  .ai-custom-text-field__input-{{ ai_gen_id }} {
+    width: 100%;
+    padding: {{ block.settings.input_padding }}px;
+    font-size: {{ block.settings.input_font_size }}px;
+    color: {{ block.settings.input_text_color }};
+    background-color: {{ block.settings.input_background }};
+    border: {{ block.settings.border_width }}px solid {{ block.settings.border_color }};
+    border-radius: {{ block.settings.input_border_radius }}px;
+    transition: border-color 0.3s ease;
+  }
+
+  .ai-custom-text-field__input-{{ ai_gen_id }}:focus {
+    outline: none;
+    border-color: {{ block.settings.border_focus_color }};
+  }
+
+  .ai-custom-text-field__input-{{ ai_gen_id }}::placeholder {
+    color: {{ block.settings.placeholder_color }};
+    opacity: 0.7;
+  }
+
+  .ai-custom-text-field__char-count-{{ ai_gen_id }} {
+    font-size: 12px;
+    color: {{ block.settings.label_color }};
+    opacity: 0.6;
+    text-align: right;
+  }
+{% endstyle %}
+
+<custom-text-field-{{ ai_gen_id }}
+  class="ai-custom-text-field-{{ ai_gen_id }}"
+  {{ block.shopify_attributes }}
+  data-product-id="{{ product.id }}"
+>
+  <div class="ai-custom-text-field__wrapper-{{ ai_gen_id }}">
+    {% if block.settings.field_label != blank %}
+      <label
+        for="ai-custom-text-field-input-{{ ai_gen_id }}"
+        class="ai-custom-text-field__label-{{ ai_gen_id }}"
+      >
+        {{ block.settings.field_label }}
+        {% if block.settings.required %}
+          <span aria-label="required">*</span>
+        {% endif %}
+      </label>
+    {% endif %}
+
+    {% if block.settings.input_type == 'textarea' %}
+      <textarea
+        id="ai-custom-text-field-input-{{ ai_gen_id }}"
+        name="properties[{{ block.settings.property_name }}]"
+        class="ai-custom-text-field__input-{{ ai_gen_id }}"
+        placeholder="{{ block.settings.placeholder_text }}"
+        {% if block.settings.required %}required{% endif %}
+        {% if block.settings.max_characters > 0 %}maxlength="{{ block.settings.max_characters }}"{% endif %}
+        rows="{{ block.settings.textarea_rows }}"
+        aria-label="{{ block.settings.field_label | default: block.settings.placeholder_text }}"
+      ></textarea>
+    {% else %}
+      <input
+        type="text"
+        id="ai-custom-text-field-input-{{ ai_gen_id }}"
+        name="properties[{{ block.settings.property_name }}]"
+        class="ai-custom-text-field__input-{{ ai_gen_id }}"
+        placeholder="{{ block.settings.placeholder_text }}"
+        {% if block.settings.required %}required{% endif %}
+        {% if block.settings.max_characters > 0 %}maxlength="{{ block.settings.max_characters }}"{% endif %}
+        aria-label="{{ block.settings.field_label | default: block.settings.placeholder_text }}"
+      >
+    {% endif %}
+
+    {% if block.settings.show_character_count and block.settings.max_characters > 0 %}
+      <div class="ai-custom-text-field__char-count-{{ ai_gen_id }}">
+        <span class="ai-custom-text-field__current-count-{{ ai_gen_id }}">0</span> / {{ block.settings.max_characters }}
+      </div>
+    {% endif %}
+  </div>
+</custom-text-field-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class CustomTextField{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+      }
+
+      connectedCallback() {
+        this.input = this.querySelector('#ai-custom-text-field-input-{{ ai_gen_id }}');
+        this.charCountDisplay = this.querySelector('.ai-custom-text-field__current-count-{{ ai_gen_id }}');
+        
+        if (this.input && this.charCountDisplay) {
+          this.input.addEventListener('input', this.updateCharCount.bind(this));
+        }
+      }
+
+      updateCharCount() {
+        if (this.charCountDisplay) {
+          this.charCountDisplay.textContent = this.input.value.length;
+        }
+      }
+    }
+
+    customElements.define('custom-text-field-{{ ai_gen_id }}', CustomTextField{{ ai_gen_id }});
+  })();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Custom text field",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Field settings"
+    },
+    {
+      "type": "text",
+      "id": "field_label",
+      "label": "Field label",
+      "default": "Personalization"
+    },
+    {
+      "type": "text",
+      "id": "placeholder_text",
+      "label": "Placeholder text",
+      "default": "Enter your custom text here"
+    },
+    {
+      "type": "text",
+      "id": "property_name",
+      "label": "Property name",
+      "info": "This name will be used to identify the field in order details",
+      "default": "Custom text"
+    },
+    {
+      "type": "select",
+      "id": "input_type",
+      "label": "Input type",
+      "options": [
+        {
+          "value": "text",
+          "label": "Single line"
+        },
+        {
+          "value": "textarea",
+          "label": "Multi-line"
+        }
+      ],
+      "default": "text"
+    },
+    {
+      "type": "range",
+      "id": "textarea_rows",
+      "label": "Textarea rows",
+      "min": 2,
+      "max": 10,
+      "step": 1,
+      "default": 4
+    },
+    {
+      "type": "checkbox",
+      "id": "required",
+      "label": "Required field",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "max_characters",
+      "label": "Maximum characters",
+      "info": "Set to 0 for no limit",
+      "min": 0,
+      "max": 500,
+      "step": 10,
+      "default": 100
+    },
+    {
+      "type": "checkbox",
+      "id": "show_character_count",
+      "label": "Show character count",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Label style"
+    },
+    {
+      "type": "range",
+      "id": "label_size",
+      "label": "Label size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "select",
+      "id": "label_weight",
+      "label": "Label weight",
+      "options": [
+        {
+          "value": "400",
+          "label": "Normal"
+        },
+        {
+          "value": "500",
+          "label": "Medium"
+        },
+        {
+          "value": "600",
+          "label": "Semi-bold"
+        },
+        {
+          "value": "700",
+          "label": "Bold"
+        }
+      ],
+      "default": "600"
+    },
+    {
+      "type": "color",
+      "id": "label_color",
+      "label": "Label color",
+      "default": "#1a1a1a"
+    },
+    {
+      "type": "header",
+      "content": "Input style"
+    },
+    {
+      "type": "range",
+      "id": "input_padding",
+      "label": "Input padding",
+      "min": 8,
+      "max": 24,
+      "step": 2,
+      "unit": "px",
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "input_font_size",
+      "label": "Input font size",
+      "min": 12,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "color",
+      "id": "input_text_color",
+      "label": "Input text color",
+      "default": "#1a1a1a"
+    },
+    {
+      "type": "color",
+      "id": "input_background",
+      "label": "Input background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "placeholder_color",
+      "label": "Placeholder color",
+      "default": "#999999"
+    },
+    {
+      "type": "range",
+      "id": "input_border_radius",
+      "label": "Border radius",
+      "min": 0,
+      "max": 20,
+      "step": 2,
+      "unit": "px",
+      "default": 8
+    },
+    {
+      "type": "range",
+      "id": "border_width",
+      "label": "Border width",
+      "min": 1,
+      "max": 4,
+      "step": 1,
+      "unit": "px",
+      "default": 1
+    },
+    {
+      "type": "color",
+      "id": "border_color",
+      "label": "Border color",
+      "default": "#e0e0e0"
+    },
+    {
+      "type": "color",
+      "id": "border_focus_color",
+      "label": "Border focus color",
+      "default": "#f575b4"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom text field"
+    }
+  ]
+}
 {% endschema %}
