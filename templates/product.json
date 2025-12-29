@@ -150,12 +150,93 @@
     "176695364749678c78": {
       "type": "_blocks",
       "settings": {}
+    },
+    "images_with_text_scrolling_J6cRzq": {
+      "type": "images-with-text-scrolling",
+      "blocks": {
+        "item_RaxgC7": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 48,
+            "title": "Heading 2",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_RaxgC7"
+      ],
+      "name": "Images and text scrolling",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "show_counter": true,
+        "desktop_image_effect": "reveal",
+        "image_position": "end",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
+      }
+    },
+    "17669779774ba03d69": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_cfb894d_4KUt6y": {
+          "type": "ai_gen_block_cfb894d",
+          "settings": {
+            "title": "Watch our videos",
+            "subtitle": "Discover our latest content",
+            "title_size": 32,
+            "subtitle_size": 16,
+            "text_alignment": "center",
+            "title_color": "#1a1a1a",
+            "subtitle_color": "#666666",
+            "video_title_1": "",
+            "video_description_1": "",
+            "video_title_2": "",
+            "video_description_2": "",
+            "video_title_3": "",
+            "video_description_3": "",
+            "video_title_4": "",
+            "video_description_4": "",
+            "video_title_5": "",
+            "video_description_5": "",
+            "video_title_6": "",
+            "video_description_6": "",
+            "max_width": 1200,
+            "gap": 20,
+            "gap_mobile": 10,
+            "padding_vertical": 60,
+            "background_color": "#ffffff",
+            "video_background": "#f5f5f5",
+            "video_border_radius": 16,
+            "video_title_color": "#1a1a1a",
+            "video_description_color": "#666666",
+            "show_controls": true,
+            "nav_button_color": "#f575b4",
+            "nav_button_hover_color": "#e05a9f",
+            "nav_button_icon_color": "#ffffff",
+            "dot_color": "#cccccc",
+            "dot_active_color": "#f575b4"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_cfb894d_4KUt6y"
+      ],
+      "settings": {}
     }
   },
   "order": [
     "main",
     "related-products",
     "176695348930e20b4b",
-    "176695364749678c78"
+    "176695364749678c78",
+    "images_with_text_scrolling_J6cRzq",
+    "17669779774ba03d69"
   ]
 }
