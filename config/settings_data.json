@@ -49,6 +49,11 @@
         "type": "shopify://apps/kaching-bundles/blocks/app-embed-block-v2/6c637362-a106-4a32-94ac-94dcfd68cdb8",
         "disabled": false,
         "settings": {}
+      },
+      "3720565183479497137": {
+        "type": "shopify://apps/globo-product-options/blocks/app-embed-block/fdc9fad5-1a0f-4bd4-9c8a-1af6a6eef6b8",
+        "disabled": false,
+        "settings": {}
       }
     }
   },
