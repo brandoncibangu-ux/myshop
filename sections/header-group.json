@@ -14,15 +14,23 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
+        "message_imPx7b": {
+          "type": "message",
+          "settings": {
+            "text": "Vente Saint-Valentin",
+            "url": ""
+          }
+        },
         "message": {
           "type": "message",
           "settings": {
-            "text": "Announce something here",
+            "text": "Livraison Offerte!",
             "url": ""
           }
         }
       },
       "block_order": [
+        "message_imPx7b",
         "message"
       ],
       "settings": {
