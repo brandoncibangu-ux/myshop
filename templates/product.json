@@ -153,11 +153,11 @@
         "ai_gen_block_1446dfd_ApYz4G": {
           "type": "ai_gen_block_1446dfd",
           "settings": {
-            "heading": "Your heading text",
+            "heading": "Cette réaction en vaudra toujours la peine.!",
             "subheading": "",
             "text_alignment": "center",
             "desktop_width_percent": 100,
-            "heading_size_mobile": 32,
+            "heading_size_mobile": 20,
             "heading_size_desktop": 48,
             "line_height": 1.2,
             "heading_color": "#1a1a1a",
