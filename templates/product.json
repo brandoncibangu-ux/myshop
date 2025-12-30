@@ -130,27 +130,6 @@
     },
     "rich_text_eYXb4x": {
       "type": "rich-text",
-      "blocks": {
-        "heading_3L4jxg": {
-          "type": "heading",
-          "settings": {
-            "text": "Heading",
-            "heading_tag": "h1",
-            "text_color": "",
-            "gradient": ""
-          }
-        },
-        "richtext_kEYcL6": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_3L4jxg",
-        "richtext_kEYcL6"
-      ],
       "custom_css": [
         "h1 {margin-bottom: 10em;}"
       ],
@@ -171,6 +150,26 @@
     "176706680818283aea": {
       "type": "_blocks",
       "blocks": {
+        "ai_gen_block_1446dfd_ApYz4G": {
+          "type": "ai_gen_block_1446dfd",
+          "settings": {
+            "heading": "Your heading text",
+            "subheading": "",
+            "text_alignment": "center",
+            "desktop_width_percent": 100,
+            "heading_size_mobile": 32,
+            "heading_size_desktop": 48,
+            "line_height": 1.2,
+            "heading_color": "#1a1a1a",
+            "subheading_size_mobile": 14,
+            "subheading_size_desktop": 18,
+            "subheading_color": "#1a1a1a",
+            "subheading_spacing": 12,
+            "padding_top": 40,
+            "padding_bottom": 0
+          },
+          "blocks": {}
+        },
         "ai_gen_block_e63177f_7C3CxW": {
           "type": "ai_gen_block_e63177f",
           "settings": {
@@ -191,6 +190,7 @@
         }
       },
       "block_order": [
+        "ai_gen_block_1446dfd_ApYz4G",
         "ai_gen_block_e63177f_7C3CxW"
       ],
       "settings": {}
@@ -301,6 +301,18 @@
         "heading_color": "",
         "heading_gradient": ""
       }
+    },
+    "1767068648c8152bcf": {
+      "type": "_blocks",
+      "settings": {}
+    },
+    "176706838724dab95b": {
+      "type": "_blocks",
+      "settings": {}
+    },
+    "176706863145f0c195": {
+      "type": "_blocks",
+      "settings": {}
     }
   },
   "order": [
@@ -312,6 +324,9 @@
     "media_with_text_mFmfUe",
     "176695348930e20b4b",
     "176695364749678c78",
-    "images_with_text_scrolling_J6cRzq"
+    "images_with_text_scrolling_J6cRzq",
+    "1767068648c8152bcf",
+    "176706838724dab95b",
+    "176706863145f0c195"
   ]
 }
