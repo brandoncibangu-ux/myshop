@@ -128,6 +128,35 @@
         "input_text_color": ""
       }
     },
+    "rich_text_eYXb4x": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_3L4jxg": {
+          "type": "heading",
+          "settings": {
+            "text": "Heading",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_3L4jxg"
+      ],
+      "custom_css": [
+        "h1,h2,h3 {margin-bottom: 20px;}"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "17669779774ba03d69": {
       "type": "_blocks",
       "settings": {}
@@ -269,6 +298,7 @@
   },
   "order": [
     "main",
+    "rich_text_eYXb4x",
     "17669779774ba03d69",
     "176706680818283aea",
     "rich_text_9QgrzY",
