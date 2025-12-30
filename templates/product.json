@@ -139,13 +139,20 @@
             "text_color": "",
             "gradient": ""
           }
+        },
+        "richtext_kEYcL6": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+          }
         }
       },
       "block_order": [
-        "heading_3L4jxg"
+        "heading_3L4jxg",
+        "richtext_kEYcL6"
       ],
       "custom_css": [
-        "h1,h2,h3 {margin-bottom: 20px;}"
+        "h1 {margin-bottom: 10em;}"
       ],
       "name": "Rich text",
       "settings": {
