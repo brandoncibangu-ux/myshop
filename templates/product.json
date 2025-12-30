@@ -96,7 +96,7 @@
         "collapsible_text_cKCNBV": {
           "type": "collapsible_text",
           "settings": {
-            "icon": "none",
+            "icon": "picto-coupon",
             "icon_width": 20,
             "title": "Détails",
             "content": "<ul><li>Lettres A–Z, chiffres 0–9</li><li>Pas d’apostrophe ni de trait d’union</li><li>Métal hypoallergénique : alliage de zinc</li><li>Lavage à la main uniquement</li><li>Emballage discret</li></ul><p><strong>Un doute sur votre personnalisation ? Contactez-nous</strong></p>",
@@ -106,20 +106,20 @@
         "collapsible_text_AiihPN": {
           "type": "collapsible_text",
           "settings": {
-            "icon": "none",
+            "icon": "picto-truck",
             "icon_width": 20,
-            "title": "Title",
-            "content": "<p>Share some content to your customers about your products.</p>",
+            "title": "Shipping",
+            "content": "<p>Veuillez noter qu’il s’agit d’un produit <strong>fait main et personnalisé</strong>.</p><p>Le <strong>délai de production</strong> varie de <strong>1 à 3 jours ouvrables</strong>.</p><p>En raison du <strong>volume élevé de commandes</strong> ces dernières semaines, le <strong>délai de livraison est actuellement de 5 à 9 jours ouvrables</strong> et peut varier selon votre localisation.</p><p>Nous informons nos aimables clients que <strong>toute modification effectuée après l’achat</strong> concernant une inscription personnalisée ou l’adresse de livraison <strong>peut entraîner un délai supplémentaire.</strong></p>",
             "page": ""
           }
         },
         "collapsible_text_ApKbe3": {
           "type": "collapsible_text",
           "settings": {
-            "icon": "none",
+            "icon": "picto-return",
             "icon_width": 20,
-            "title": "Title",
-            "content": "<p>Share some content to your customers about your products.</p>",
+            "title": "Retours et remboursement",
+            "content": "<p>Nous offrons une <strong>garantie satisfait ou remboursé à 100 %</strong></p><p>Si vous n’aimez pas notre string autant que nous, aucun souci ! Nous nous occupons de tout et vous serez <strong>intégralement remboursé rapidement et en toute sécurité</strong>.</p>",
             "page": ""
           }
         }
