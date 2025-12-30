@@ -34,7 +34,7 @@
         "message"
       ],
       "settings": {
-        "enable_sticky": false,
+        "enable_sticky": true,
         "autoplay": false,
         "cycle_speed": 6,
         "text_size": "text-xs",
