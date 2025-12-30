@@ -234,7 +234,7 @@
         "image_Me7DDb": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Img_5.webp",
+            "image": "shopify://shop_images/483219681243563034-db09d801-9753-4ed4-8c4f-b6482df766e7_ca6cb20d-ec64-4f29-a594-cfc0558d54e7-ezgif.com-gif-to-webp-converter.webp",
             "media_width": 30,
             "media_position": "end",
             "text_position": "place-self-center text-center",
@@ -261,7 +261,40 @@
       "settings": {
         "full_width": false,
         "alternate_media_position": false,
-        "spacing": "small"
+        "spacing": "none"
+      }
+    },
+    "rich_text_j6JYgk": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_6jwUmY": {
+          "type": "heading",
+          "settings": {
+            "text": "Pour des nuits d'exception",
+            "heading_tag": "h3",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_4EWHbD": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Notre lingerie vous promet un <strong>charme irrésistible</strong> et sublime votre <strong>confiance en vous</strong>, pour des <strong>moments inoubliables</strong> avec l'être aimé.</p><p><br/><strong>Entretenez la flamme,</strong> de vos rendez-vous romantiques jusqu'aux petites attentions du quotidien.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_6jwUmY",
+        "richtext_4EWHbD"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
       }
     },
     "media_with_text_GWBXCX": {
@@ -270,7 +303,7 @@
         "image_tkFB9r": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/483219681243563034-db09d801-9753-4ed4-8c4f-b6482df766e7_ca6cb20d-ec64-4f29-a594-cfc0558d54e7-ezgif.com-gif-to-webp-converter.webp",
+            "image": "shopify://shop_images/Img_5.webp",
             "media_width": 30,
             "media_position": "end",
             "text_position": "place-self-center text-center",
@@ -358,6 +391,7 @@
     "176706680818283aea",
     "rich_text_9QgrzY",
     "media_with_text_mFmfUe",
+    "rich_text_j6JYgk",
     "media_with_text_GWBXCX",
     "176695348930e20b4b",
     "176695364749678c78",
