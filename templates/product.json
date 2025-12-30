@@ -138,12 +138,15 @@
         "ai_gen_block_e63177f_7C3CxW": {
           "type": "ai_gen_block_e63177f",
           "settings": {
+            "video_1": "shopify://files/videos/site 1-1.mp4",
+            "video_2": "shopify://files/videos/site 2-1.mp4",
+            "video_3": "shopify://files/videos/1229-1.mp4",
             "autoplay": true,
             "loop": true,
-            "show_controls": true,
+            "show_controls": false,
             "video_gap": 16,
-            "mobile_video_gap": 8,
-            "border_radius": 8,
+            "mobile_video_gap": 6,
+            "border_radius": 4,
             "nav_button_color": "#000000",
             "nav_button_icon_color": "#ffffff",
             "dot_color": "#000000"
