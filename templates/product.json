@@ -77,6 +77,12 @@
             "payment_button_text_color": ""
           }
         },
+        "liquid_d7exW7": {
+          "type": "liquid",
+          "settings": {
+            "liquid": ""
+          }
+        },
         "globo_product_options_app_block_FKp8fi": {
           "type": "shopify://apps/globo-product-options/blocks/app-block/fdc9fad5-1a0f-4bd4-9c8a-1af6a6eef6b8",
           "settings": {}
@@ -94,6 +100,7 @@
         "description",
         "quantity_selector",
         "buy_buttons",
+        "liquid_d7exW7",
         "globo_product_options_app_block_FKp8fi"
       ],
       "settings": {
