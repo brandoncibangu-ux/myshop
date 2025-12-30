@@ -92,6 +92,36 @@
         "globo_product_options_app_block_FKp8fi": {
           "type": "shopify://apps/globo-product-options/blocks/app-block/fdc9fad5-1a0f-4bd4-9c8a-1af6a6eef6b8",
           "settings": {}
+        },
+        "collapsible_text_cKCNBV": {
+          "type": "collapsible_text",
+          "settings": {
+            "icon": "none",
+            "icon_width": 20,
+            "title": "Détails",
+            "content": "<ul><li>Lettres A–Z, chiffres 0–9</li><li>Pas d’apostrophe ni de trait d’union</li><li>Métal hypoallergénique : alliage de zinc</li><li>Lavage à la main uniquement</li><li>Emballage discret</li></ul><p><strong>Un doute sur votre personnalisation ? Contactez-nous</strong></p>",
+            "page": ""
+          }
+        },
+        "collapsible_text_AiihPN": {
+          "type": "collapsible_text",
+          "settings": {
+            "icon": "none",
+            "icon_width": 20,
+            "title": "Title",
+            "content": "<p>Share some content to your customers about your products.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_text_ApKbe3": {
+          "type": "collapsible_text",
+          "settings": {
+            "icon": "none",
+            "icon_width": 20,
+            "title": "Title",
+            "content": "<p>Share some content to your customers about your products.</p>",
+            "page": ""
+          }
         }
       },
       "block_order": [
@@ -108,7 +138,10 @@
         "buy_buttons",
         "liquid_AALHik",
         "liquid_d7exW7",
-        "globo_product_options_app_block_FKp8fi"
+        "globo_product_options_app_block_FKp8fi",
+        "collapsible_text_cKCNBV",
+        "collapsible_text_AiihPN",
+        "collapsible_text_ApKbe3"
       ],
       "settings": {
         "full_width": true,
@@ -341,36 +374,6 @@
       "type": "_blocks",
       "settings": {}
     },
-    "images_with_text_scrolling_J6cRzq": {
-      "type": "images-with-text-scrolling",
-      "blocks": {
-        "item_RaxgC7": {
-          "type": "item",
-          "settings": {
-            "icon": "none",
-            "icon_width": 48,
-            "title": "Heading 2",
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "item_RaxgC7"
-      ],
-      "name": "Images and text scrolling",
-      "settings": {
-        "full_width": true,
-        "stack_on_mobile": false,
-        "show_counter": true,
-        "desktop_image_effect": "reveal",
-        "image_position": "end",
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": ""
-      }
-    },
     "1767068648c8152bcf": {
       "type": "_blocks",
       "settings": {}
@@ -395,7 +398,6 @@
     "media_with_text_GWBXCX",
     "176695348930e20b4b",
     "176695364749678c78",
-    "images_with_text_scrolling_J6cRzq",
     "1767068648c8152bcf",
     "176706838724dab95b",
     "176706863145f0c195"
