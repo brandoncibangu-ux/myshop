@@ -363,7 +363,7 @@
       "settings": {
         "full_width": false,
         "alternate_media_position": false,
-        "spacing": "small"
+        "spacing": "none"
       }
     },
     "176695348930e20b4b": {
@@ -392,6 +392,32 @@
         "full_width": true,
         "remove_vertical_spacing": false,
         "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "rich_text_BYkE9W": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_78fTKM": {
+          "type": "heading",
+          "settings": {
+            "text": "Rejoignez les femmes qui ne peuvent plus se passer de notre lingerie personnalisée.",
+            "heading_tag": "h3",
+            "text_color": "",
+            "gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_78fTKM"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
         "background": "",
         "background_gradient": "",
         "text_color": ""
@@ -435,6 +461,7 @@
     "176706838724dab95b",
     "176706863145f0c195",
     "1767074542df87b5ad",
+    "rich_text_BYkE9W",
     "176748578627cee2a6"
   ]
 }
