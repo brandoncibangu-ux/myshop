@@ -1,0 +1,568 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "liquid_RhcgHx": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<!DOCTYPE html>\n<html lang=\"fr\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <title>Avis Clients</title>\n  <style>\n    body.unique-body-Qaz123 {\n      display: flex;\n      justify-content: center;\n      align-items: center;\n      height: 100vh;\n      margin: 0;\n      background-color: #fff;\n    }\n\n    .unique-rating-container-Wsx456 {\n      display: flex;\n      align-items: center;\n      font-size: 14px;\n      color: #333;\n    }\n\n    .unique-rating-stars-Edc789 {\n      display: flex;\n      margin-right: 8px;\n    }\n\n    .unique-rating-stars-Edc789 svg {\n      fill: #FF5D90;\n      width: 16px;\n      height: 16px;\n      transition: transform 0.3s;\n    }\n\n    .unique-rating-stars-Edc789 svg:hover {\n      transform: scale(1.3);\n    }\n\n    .unique-rating-text-Rfv012 {\n      font-size: 14px;\n      color: #333;\n      font-weight: bold;\n    }\n  </style>\n</head>\n<body class=\"unique-body-Qaz123\">\n\n<div class=\"unique-rating-container-Wsx456\">\n  <div class=\"unique-rating-stars-Edc789\">\n    <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M12 .587l3.668 7.431 8.144 1.18-5.906 5.434 1.391 8.079L12 18.896l-7.297 3.843 1.391-8.079-5.906-5.434 8.144-1.18z\"/></svg>\n    <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M12 .587l3.668 7.431 8.144 1.18-5.906 5.434 1.391 8.079L12 18.896l-7.297 3.843 1.391-8.079-5.906-5.434 8.144-1.18z\"/></svg>\n    <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M12 .587l3.668 7.431 8.144 1.18-5.906 5.434 1.391 8.079L12 18.896l-7.297 3.843 1.391-8.079-5.906-5.434 8.144-1.18z\"/></svg>\n    <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M12 .587l3.668 7.431 8.144 1.18-5.906 5.434 1.391 8.079L12 18.896l-7.297 3.843 1.391-8.079-5.906-5.434 8.144-1.18z\"/></svg>\n    <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M12 .587l3.668 7.431 8.144 1.18-5.906 5.434 1.391 8.079L12 18.896l-7.297 3.843 1.391-8.079-5.906-5.434 8.144-1.18z\"/></svg>\n  </div>\n  <span class=\"unique-rating-text-Rfv012\">4,8/5 par plus de 15,000 couples satisfaits !</span>\n</div>\n\n</body>\n</html>"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_tag": "h2"
+          }
+        },
+        "badges": {
+          "type": "badges",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false
+          }
+        },
+        "rating": {
+          "type": "rating",
+          "settings": {
+            "show_empty": false
+          }
+        },
+        "payment_terms": {
+          "type": "payment_terms",
+          "settings": {}
+        },
+        "separator": {
+          "type": "separator",
+          "settings": {}
+        },
+        "liquid_tWdWBX": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<!DOCTYPE html>\n<html lang=\"fr\">\n<head>\n  <meta charset=\"UTF-8\" />\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"/>\n  <title>Caractéristiques du produit</title>\n  <style>\n    :root {\n      --text-color: #333;\n      --hover-bg-color: #f1f1f1;\n      --highlight-color: #000;\n      --transition-duration: 0.3s;\n      --font-family: 'Helvetica Neue', Arial, sans-serif;\n    }\n\n    body.bdy-a123 {\n      font-family: var(--font-family);\n      display: flex;\n      justify-content: flex-start;\n      align-items: flex-start;\n      height: 100vh;\n      margin: 0;\n      background: none;\n      padding: 20px;\n    }\n\n    .container-x987 {\n      width: 100%;\n      max-width: 600px;\n      display: flex;\n      flex-direction: column;\n      gap: 5px;\n    }\n\n    .item-z456 {\n      display: flex;\n      align-items: center;\n      padding: 5px 0;\n      border-radius: 8px;\n      transition: background-color var(--transition-duration) ease, transform var(--transition-duration) ease;\n      cursor: default;\n    }\n\n    .item-z456:hover {\n      background-color: var(--hover-bg-color);\n      transform: translateX(10px);\n    }\n\n    .icon-w321 {\n      width: 32px;\n      height: 32px;\n      margin-right: 10px;\n      transition: transform var(--transition-duration) ease;\n    }\n\n    .item-z456:hover .icon-w321 {\n      transform: scale(1.1);\n    }\n\n    .text-v654 {\n      font-size: 16px;\n      color: var(--text-color);\n      transition: color var(--transition-duration) ease;\n    }\n\n    .item-z456:hover .text-v654 {\n      color: var(--highlight-color);\n    }\n\n    @media (max-width: 600px) {\n      .text-v654 {\n        font-size: 14px;\n      }\n    }\n  </style>\n</head>\n<body class=\"bdy-a123\">\n  <div class=\"container-x987\">\n    <div class=\"item-z456\">\n      <img src=\"https://cdn.shopify.com/s/files/1/0906/0165/2547/files/making-love.png?v=1743635530\" alt=\"Icône passion\" class=\"icon-w321\">\n      <div class=\"text-v654\"><strong>Ajoutez du piquant et surprenez votre partenaire</strong></div>\n    </div>\n    <div class=\"item-z456\">\n      <img src=\"https://cdn.shopify.com/s/files/1/0906/0165/2547/files/women_bb941f19-2fb1-4932-909f-748b996ec82f.png?v=1743635530\" alt=\"Icône string\" class=\"icon-w321\">\n      <div class=\"text-v654\"><strong>Son prénom sur votre string</strong></div>\n    </div>\n    <div class=\"item-z456\">\n      <img src=\"https://cdn.shopify.com/s/files/1/0906/0165/2547/files/hand-made-_1.png?v=1743635531\" alt=\"Icône fait main\" class=\"icon-w321\">\n      <div class=\"text-v654\"><strong>100 % fait à la main</strong></div>\n    </div>\n    <div class=\"item-z456\">"
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "icon": "none",
+            "icon_width": 20,
+            "collapse_content": false
+          }
+        },
+        "variant_picker_xBPCcc": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "stack_blocks": true,
+            "selector_style": "block",
+            "swatch_selector_style": "swatch",
+            "variant_image_options": "",
+            "size_chart_page": ""
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "show_gift_card_recipient": true,
+            "atc_button_background": "#1a1a1a",
+            "atc_button_text_color": "#ffffff",
+            "payment_button_background": "#1a1a1a",
+            "payment_button_text_color": ""
+          }
+        },
+        "liquid_AALHik": {
+          "type": "liquid",
+          "settings": {
+            "liquid": ""
+          }
+        },
+        "liquid_d7exW7": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<!-- Importer la police Nunito avec une graisse 700 -->\n<link href=\"https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap\" rel=\"stylesheet\">\n\n<div class=\"top-bar\">\n  <div class=\"top-bar-item\">✓ Garantie 30 jours</div>\n  <div class=\"top-bar-item\">✓ Livraison gratuite</div>\n</div>\n\n<style>\n  .top-bar {\n    display: flex;\n    justify-content: center;\n    gap: 30px;\n    background-color: #FFFFFF; /* Fond blanc */\n    padding: 4px 0;\n    margin-top: 0;\n    font-family: 'Nunito', sans-serif;\n    font-weight: 700; /* Texte en gras */\n    font-size: 12px;\n    color: #1A1A1A; /* Couleur du texte mise à jour */\n  }\n  .top-bar-item {\n    display: flex;\n    align-items: center;\n  }\n</style>"
+          }
+        },
+        "globo_product_options_app_block_FKp8fi": {
+          "type": "shopify://apps/globo-product-options/blocks/app-block/fdc9fad5-1a0f-4bd4-9c8a-1af6a6eef6b8",
+          "settings": {}
+        },
+        "collapsible_text_cKCNBV": {
+          "type": "collapsible_text",
+          "settings": {
+            "icon": "picto-coupon",
+            "icon_width": 20,
+            "title": "Détails",
+            "content": "<ul><li>Lettres A–Z, chiffres 0–9</li><li>Pas d’apostrophe ni de trait d’union</li><li>Métal hypoallergénique : alliage de zinc</li><li>Lavage à la main uniquement</li><li>Emballage discret</li></ul><p><strong>Un doute sur votre personnalisation ? Contactez-nous</strong></p>",
+            "page": ""
+          }
+        },
+        "collapsible_text_AiihPN": {
+          "type": "collapsible_text",
+          "settings": {
+            "icon": "picto-truck",
+            "icon_width": 20,
+            "title": "Shipping",
+            "content": "<p>Veuillez noter qu’il s’agit d’un produit <strong>fait main et personnalisé</strong>.</p><p>Le <strong>délai de production</strong> varie de <strong>1 à 3 jours ouvrables</strong>.</p><p>En raison du <strong>volume élevé de commandes</strong> ces dernières semaines, le <strong>délai de livraison est actuellement de 5 à 9 jours ouvrables</strong> et peut varier selon votre localisation.</p><p>Nous informons nos aimables clients que <strong>toute modification effectuée après l’achat</strong> concernant une inscription personnalisée ou l’adresse de livraison <strong>peut entraîner un délai supplémentaire.</strong></p>",
+            "page": ""
+          }
+        },
+        "collapsible_text_ApKbe3": {
+          "type": "collapsible_text",
+          "settings": {
+            "icon": "picto-return",
+            "icon_width": 20,
+            "title": "Retours et remboursement",
+            "content": "<p>Nous offrons une <strong>garantie satisfait ou remboursé à 100 %</strong></p><p>Si vous n’aimez pas notre string autant que nous, aucun souci ! Nous nous occupons de tout et vous serez <strong>intégralement remboursé rapidement et en toute sécurité</strong>.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "liquid_RhcgHx",
+        "title",
+        "badges",
+        "price",
+        "rating",
+        "payment_terms",
+        "separator",
+        "liquid_tWdWBX",
+        "description",
+        "variant_picker_xBPCcc",
+        "quantity_selector",
+        "buy_buttons",
+        "liquid_AALHik",
+        "liquid_d7exW7",
+        "globo_product_options_app_block_FKp8fi",
+        "collapsible_text_cKCNBV",
+        "collapsible_text_AiihPN",
+        "collapsible_text_ApKbe3"
+      ],
+      "settings": {
+        "full_width": true,
+        "show_fixed_add_to_cart": true,
+        "desktop_media_width": 55,
+        "desktop_media_layout": "carousel_thumbnails_bottom",
+        "mobile_media_size": "expanded",
+        "mobile_carousel_control": "thumbnails",
+        "enable_video_autoplay": false,
+        "enable_video_looping": true,
+        "enable_image_zoom": true,
+        "max_image_zoom_level": 3.5,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "input_background": "rgba(0,0,0,0)",
+        "input_text_color": ""
+      }
+    },
+    "rich_text_eYXb4x": {
+      "type": "rich-text",
+      "custom_css": [
+        "h1 {margin-bottom: 10em;}"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "17669779774ba03d69": {
+      "type": "_blocks",
+      "settings": {}
+    },
+    "176706680818283aea": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_1446dfd_ApYz4G": {
+          "type": "ai_gen_block_1446dfd",
+          "settings": {
+            "heading": "Cette réaction en vaudra toujours la peine!",
+            "subheading": "<p>+ de 15 000 nuits inoubliable!</p>",
+            "text_alignment": "center",
+            "desktop_width_percent": 100,
+            "heading_size_mobile": 20,
+            "heading_size_desktop": 48,
+            "line_height": 1.2,
+            "heading_color": "#1a1a1a",
+            "subheading_size_mobile": 15,
+            "subheading_size_desktop": 18,
+            "subheading_color": "#1a1a1a",
+            "subheading_spacing": 12,
+            "padding_top": 0,
+            "padding_bottom": 0
+          },
+          "blocks": {}
+        },
+        "ai_gen_block_e63177f_7C3CxW": {
+          "type": "ai_gen_block_e63177f",
+          "settings": {
+            "video_1": "shopify://files/videos/site 1-1.mp4",
+            "video_2": "shopify://files/videos/site 2-1.mp4",
+            "video_3": "shopify://files/videos/1229-1.mp4",
+            "autoplay": true,
+            "loop": true,
+            "show_controls": false,
+            "video_gap": 16,
+            "mobile_video_gap": 6,
+            "border_radius": 4,
+            "nav_button_color": "#000000",
+            "nav_button_icon_color": "#ffffff",
+            "dot_color": "#000000"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_1446dfd_ApYz4G",
+        "ai_gen_block_e63177f_7C3CxW"
+      ],
+      "settings": {}
+    },
+    "rich_text_9QgrzY": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_GhVLDp": {
+          "type": "heading",
+          "settings": {
+            "text": "Séduisant. Personnalisable. Inoubliable.",
+            "heading_tag": "h3",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_TPQ9pT": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Ce n’est pas qu’un simple string ; c’est votre <strong>arme secrète pour des nuits inoubliables.</strong><br/><br/>Personnalisable<strong> avec le prénom ou le message de votre choix,</strong> ce cadeau intime est conçu pour <strong>créer une connexion </strong>qui ne fera que se renforcer avec le temps.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_GhVLDp",
+        "richtext_TPQ9pT"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "media_with_text_mFmfUe": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_Me7DDb": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/483219681243563034-db09d801-9753-4ed4-8c4f-b6482df766e7_ca6cb20d-ec64-4f29-a594-cfc0558d54e7-ezgif.com-gif-to-webp-converter.webp",
+            "media_width": 30,
+            "media_position": "end",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 24,
+            "subheading": "",
+            "title": "",
+            "content": "",
+            "link_text": "",
+            "link_url": "",
+            "background": "#ffffff",
+            "background_gradient": "",
+            "text_color": "#1a1a1a",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_Me7DDb"
+      ],
+      "name": "Media with text",
+      "settings": {
+        "full_width": false,
+        "alternate_media_position": false,
+        "spacing": "none"
+      }
+    },
+    "rich_text_j6JYgk": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_6jwUmY": {
+          "type": "heading",
+          "settings": {
+            "text": "Pour des nuits d'exception",
+            "heading_tag": "h3",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_4EWHbD": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Notre lingerie vous promet un <strong>charme irrésistible</strong> et sublime votre <strong>confiance en vous</strong>, pour des <strong>moments inoubliables</strong> avec l'être aimé.</p><p><br/><strong>Entretenez la flamme,</strong> de vos rendez-vous romantiques jusqu'aux petites attentions du quotidien.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_6jwUmY",
+        "richtext_4EWHbD"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "media_with_text_GWBXCX": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_tkFB9r": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Img_5.webp",
+            "media_width": 30,
+            "media_position": "end",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 24,
+            "subheading": "",
+            "title": "",
+            "content": "",
+            "link_text": "",
+            "link_url": "",
+            "background": "#ffffff",
+            "background_gradient": "",
+            "text_color": "#1a1a1a",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_tkFB9r"
+      ],
+      "name": "Media with text",
+      "settings": {
+        "full_width": false,
+        "alternate_media_position": false,
+        "spacing": "none"
+      }
+    },
+    "176695348930e20b4b": {
+      "type": "_blocks",
+      "settings": {}
+    },
+    "176695364749678c78": {
+      "type": "_blocks",
+      "settings": {}
+    },
+    "1767068648c8152bcf": {
+      "type": "_blocks",
+      "settings": {}
+    },
+    "176706838724dab95b": {
+      "type": "_blocks",
+      "settings": {}
+    },
+    "176706863145f0c195": {
+      "type": "_blocks",
+      "settings": {}
+    },
+    "1767074542df87b5ad": {
+      "type": "apps",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "rich_text_BYkE9W": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_78fTKM": {
+          "type": "heading",
+          "settings": {
+            "text": "Rejoignez les femmes qui ne peuvent plus se passer de notre lingerie personnalisée.",
+            "heading_tag": "h3",
+            "text_color": "",
+            "gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_78fTKM"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "slideshow_Qrn73G": {
+      "type": "slideshow",
+      "blocks": {
+        "image_Ei4MqT": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/thonnng.png",
+            "mobile_image": "shopify://shop_images/thonnng.png",
+            "content_max_width": 620,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "subheading": "",
+            "title": "",
+            "heading_tag": "h0",
+            "button_text": "",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30,
+            "background": "",
+            "background_gradient": ""
+          }
+        },
+        "image_LGWEUB": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/thonnng.png",
+            "mobile_image": "shopify://shop_images/thongy.png",
+            "content_max_width": 620,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "subheading": "",
+            "title": "",
+            "heading_tag": "h0",
+            "button_text": "",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30,
+            "background": "",
+            "background_gradient": ""
+          }
+        },
+        "image_RqPj3P": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/thogya.png",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "subheading": "",
+            "title": "",
+            "heading_tag": "h0",
+            "button_text": "",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30,
+            "background": "",
+            "background_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_Ei4MqT",
+        "image_LGWEUB",
+        "image_RqPj3P"
+      ],
+      "name": "Slideshow",
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "show_initial_transition": false,
+        "image_size": "auto",
+        "controls_type": "dots",
+        "transition_type": "fade",
+        "autoplay": true,
+        "cycle_speed": 4,
+        "background": "#f2f2f2",
+        "background_gradient": ""
+      }
+    },
+    "176748578627cee2a6": {
+      "type": "apps",
+      "blocks": {
+        "ali_reviews_widget_box_Gc33zN": {
+          "type": "shopify://apps/ali-reviews/blocks/widget-box/bf2eea72-0400-4db1-8908-44b7418f9a88",
+          "settings": {
+            "product": "pandore-string-personalisable"
+          }
+        }
+      },
+      "block_order": [
+        "ali_reviews_widget_box_Gc33zN"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_eYXb4x",
+    "17669779774ba03d69",
+    "176706680818283aea",
+    "rich_text_9QgrzY",
+    "media_with_text_mFmfUe",
+    "rich_text_j6JYgk",
+    "media_with_text_GWBXCX",
+    "176695348930e20b4b",
+    "176695364749678c78",
+    "1767068648c8152bcf",
+    "176706838724dab95b",
+    "176706863145f0c195",
+    "1767074542df87b5ad",
+    "rich_text_BYkE9W",
+    "slideshow_Qrn73G",
+    "176748578627cee2a6"
+  ]
+}
