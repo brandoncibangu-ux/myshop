@@ -24,6 +24,12 @@
             "heading_tag": "h2"
           }
         },
+        "liquid_U3dnmy": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<strong>NOUVEAU : 👑 Le string le plus viral de 2025</strong>"
+          }
+        },
         "badges": {
           "type": "badges",
           "settings": {}
@@ -127,6 +133,7 @@
       "block_order": [
         "liquid_RhcgHx",
         "title",
+        "liquid_U3dnmy",
         "badges",
         "price",
         "rating",
