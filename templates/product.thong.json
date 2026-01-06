@@ -101,10 +101,6 @@
             "liquid": "<div class=\"payment-icons-section\">\n  <ul class=\"icon-list-custom\" role=\"list\">\n    {% assign enabled_payment_types = 'shopify_pay,visa,master,apple_pay,google_pay' | split: ',' %}\n    {% for type in enabled_payment_types %}\n      <li class=\"payment-icon\">\n        {{ type | payment_type_svg_tag: class: 'icon-svg' }}\n      </li>\n    {% endfor %}\n  </ul>\n</div>\n\n<style>\n/* Scope uniquement cette section */\n.payment-icons-section {\n  width: 100%;\n  margin-top: 0.5rem; /* ⬅️ augmente l’espace au-dessus */\n}\n\n.payment-icons-section .icon-list-custom {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: center;\n  align-items: center;\n  list-style: none;\n  gap: 8px;\n  padding: 0;\n  margin: 0;\n}\n\n.payment-icons-section .payment-icon {\n  display: flex;\n  align-items: center;\n}\n\n.payment-icons-section .icon-svg {\n  height: 28px;\n  width: auto;\n}\n</style>"
           }
         },
-        "globo_product_options_app_block_FKp8fi": {
-          "type": "shopify://apps/globo-product-options/blocks/app-block/fdc9fad5-1a0f-4bd4-9c8a-1af6a6eef6b8",
-          "settings": {}
-        },
         "collapsible_text_cKCNBV": {
           "type": "collapsible_text",
           "settings": {
@@ -152,7 +148,6 @@
         "buy_buttons",
         "liquid_d7exW7",
         "liquid_AALHik",
-        "globo_product_options_app_block_FKp8fi",
         "collapsible_text_cKCNBV",
         "collapsible_text_AiihPN",
         "collapsible_text_ApKbe3"
