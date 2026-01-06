@@ -439,5 +439,12 @@
         "other": "Il a reçu {{ count }} avis."
       }
     }
+  },
+  "shopify": {
+    "checkout": {
+      "general": {
+        "pay_now_button_label": "Valider ma commande"
+      }
+    }
   }
 }
