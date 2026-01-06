@@ -51,7 +51,7 @@
         "liquid_tWdWBX": {
           "type": "liquid",
           "settings": {
-            "liquid": "<div class=\"ss-benefits\">\n  <p>💗 Son prénom sur votre string!</p>\n  <p>✨ Tous nos string sont faits à la main!</p>\n  <p>🍑 Profitez de nuits inoubliables avec votre partenaire!</p>\n<style>\n  .ss-benefits {\n    font-size: 16px; /* texte plus petit */\n    line-height: 1.5;\n  }\n\n  .ss-benefits p {\n    margin: 8px 0;\n  }\n</style>"
+            "liquid": "<div class=\"ss-benefits\">\n  <p>💗 Son prénom sur votre string!</p>\n  <p>✨ Tous nos string sont faits à la main!</p>\n  <p>🍑 Profitez de nuits inoubliables avec votre partenaire!</p>\n</div>\n\n<style>\n  .ss-benefits {\n    font-size: 16px;\n    line-height: 1.5;\n  }\n\n  .ss-benefits p {\n    margin: 8px 0 20px 0; /* bottom margin augmenté */\n  }\n</style>"
           }
         },
         "liquid_gfChat": {
