@@ -312,23 +312,15 @@
         "tab_8JY3Qf": {
           "type": "tab",
           "settings": {
-            "tab_title": "Sizes",
-            "tab_text": "<p>Tab Text</p>",
-            "size_chart_page": ""
-          }
-        },
-        "tab_8Nnpz7": {
-          "type": "tab",
-          "settings": {
-            "tab_title": "How to measure",
-            "tab_text": "<p><strong>A. CHEST:</strong> Measure around the fullest part of your chest, keeping the measuring tape horizontal.</p><p><strong>B. WAIST:</strong> Measure around the narrowest part (typically where your body bends side to side), keeping the tape horizontal.</p><p><strong>C. HIPS:</strong> Measure around the fullest part of your hips, keeping the tape horizontal.</p>",
-            "size_chart_page": ""
+            "tab_title": "Guide des tailles",
+            "tab_text": "",
+            "size_chart_page": "",
+            "image": "shopify://shop_images/ChatGPT_Image_6_janv._2026_13_22_05.png"
           }
         }
       },
       "block_order": [
-        "tab_8JY3Qf",
-        "tab_8Nnpz7"
+        "tab_8JY3Qf"
       ],
       "name": "SS - Size Guide",
       "settings": {
