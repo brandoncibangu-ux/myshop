@@ -57,7 +57,7 @@
         "liquid_gfChat": {
           "type": "liquid",
           "settings": {
-            "liquid": "<div id='ss-size-guide'></div><style>\n  #ss-size-guide > * {\n    display: inline-block !important;\n    padding-bottom: 4px;\n    border-bottom: 2px solid currentColor !important;\n  }\n</style>"
+            "liquid": "<div id='ss-size-guide'></div>\n<style>\n  #ss-size-guide > * {\n    display: inline-block !important;\n    padding-bottom: 4px;\n    border-bottom: 2px solid currentColor !important;\n  }\n</style>"
           }
         },
         "description": {
