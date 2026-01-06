@@ -114,7 +114,7 @@
           "settings": {
             "icon": "picto-truck",
             "icon_width": 20,
-            "title": "Shipping",
+            "title": "Livraison Gratuite",
             "content": "<p>Veuillez noter qu’il s’agit d’un produit <strong>fait main et personnalisé</strong>.</p><p>Le <strong>délai de production</strong> varie de <strong>1 à 3 jours ouvrables</strong>.</p><p>En raison du <strong>volume élevé de commandes</strong> ces dernières semaines, le <strong>délai de livraison est actuellement de 5 à 9 jours ouvrables</strong> et peut varier selon votre localisation.</p><p>Nous informons nos aimables clients que <strong>toute modification effectuée après l’achat</strong> concernant une inscription personnalisée ou l’adresse de livraison <strong>peut entraîner un délai supplémentaire.</strong></p>",
             "page": ""
           }
