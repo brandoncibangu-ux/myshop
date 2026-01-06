@@ -667,17 +667,6 @@
     },
     "176748578627cee2a6": {
       "type": "apps",
-      "blocks": {
-        "ali_reviews_widget_box_Gc33zN": {
-          "type": "shopify://apps/ali-reviews/blocks/widget-box/bf2eea72-0400-4db1-8908-44b7418f9a88",
-          "settings": {
-            "product": "pandore-string-personalisable"
-          }
-        }
-      },
-      "block_order": [
-        "ali_reviews_widget_box_Gc33zN"
-      ],
       "settings": {
         "full_width": true,
         "remove_vertical_spacing": false,
