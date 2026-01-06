@@ -57,7 +57,7 @@
         "liquid_gfChat": {
           "type": "liquid",
           "settings": {
-            "liquid": "<div id='ss-size-guide'></div>\n<style>\n  #ss-size-guide,\n  #ss-size-guide * {\n    text-decoration: underline !important;\n    text-underline-offset: 4px;\n    text-decoration-thickness: 2px;\n  }\n</style>"
+            "liquid": "<div id=\"ss-size-guide\"></div>\n\n<style>\n  [class^=\"size-toggle-template--\"] span {\n    display: inline-block;\n    padding-bottom: 4px;\n    border-bottom: 2px solid currentColor;\n  }\n</style>"
           }
         },
         "description": {
