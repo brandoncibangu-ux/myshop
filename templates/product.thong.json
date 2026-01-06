@@ -72,6 +72,12 @@
           "type": "quantity_selector",
           "settings": {}
         },
+        "liquid_CLPYiM": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<!DOCTYPE html>\n<html lang=\"fr\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <style>\n        .valentine-stock {\n            display: inline-flex;\n            align-items: center;\n            gap: 10px;\n            font-family: system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif;\n            font-size: 14px;\n            font-weight: 500;\n            color: #E25555;\n            letter-spacing: 0.3px;\n        }\n\n        .valentine-dot {\n            width: 6px;\n            height: 6px;\n            border-radius: 50%;\n            background-color: #E25555;\n            animation: pulse 1.6s ease-in-out infinite;\n        }\n\n        @keyframes pulse {\n            0% {\n                opacity: 0.5;\n                transform: scale(1);\n            }\n            50% {\n                opacity: 1;\n                transform: scale(1.4);\n            }\n            100% {\n                opacity: 0.5;\n                transform: scale(1);\n            }\n        }\n    </style>\n</head>\n<body>\n    <div class=\"valentine-stock\">\n        <span class=\"valentine-dot\"></span>\n        <span>Stock limité pour la Saint-Valentin!</span>\n    </div>\n</body>\n</html>"
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -142,6 +148,7 @@
         "liquid_tWdWBX",
         "description",
         "quantity_selector",
+        "liquid_CLPYiM",
         "buy_buttons",
         "liquid_d7exW7",
         "liquid_AALHik",
