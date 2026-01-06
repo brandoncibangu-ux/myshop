@@ -366,7 +366,7 @@
         "text_font": "josefin_sans_n4",
         "text_size": 14,
         "text_size_mobile": 14,
-        "text_height": 150,
+        "text_height": 70,
         "text_align": "left",
         "text_align_mobile": "left",
         "modal_overlay_color": "#000000",
