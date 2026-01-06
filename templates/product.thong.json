@@ -54,6 +54,12 @@
             "liquid": "<!DOCTYPE html>\n<html lang=\"fr\">\n<head>\n  <meta charset=\"UTF-8\" />\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"/>\n  <title>Caractéristiques du produit</title>\n\n  <style>\n    :root {\n      --text-color: #333;\n      --hover-bg-color: #f1f1f1;\n      --highlight-color: #000;\n      --transition-duration: 0.3s;\n      --font-family: 'Helvetica Neue', Arial, sans-serif;\n    }\n\n    body.bdy-a123 {\n      font-family: var(--font-family);\n      display: flex;\n      justify-content: flex-start;\n      align-items: flex-start;\n      height: 100vh;\n      margin: 0;\n      background: none;\n      padding: 24px;\n    }\n\n    .container-x987 {\n      width: 100%;\n      max-width: 620px;\n      display: flex;\n      flex-direction: column;\n      gap: 4px; /* reduced space between lines */\n    }\n\n    .item-z456 {\n      display: flex;\n      align-items: center;\n      padding: 6px 4px; /* reduced vertical padding */\n      border-radius: 10px;\n      transition: background-color var(--transition-duration) ease,\n                  transform var(--transition-duration) ease;\n      cursor: default;\n    }\n\n    .item-z456:hover {\n      background-color: var(--hover-bg-color);\n      transform: translateX(10px);\n    }\n\n    .icon-w321 {\n      width: 36px;\n      height: 36px;\n      margin-right: 12px; /* slightly tighter */\n      transition: transform var(--transition-duration) ease;\n    }\n\n    .item-z456:hover .icon-w321 {\n      transform: scale(1.1);\n    }\n\n    .text-v654 {\n      font-size: 18px;\n      color: var(--text-color);\n      line-height: 1.2; /* tighter line height */\n      transition: color var(--transition-duration) ease;\n    }\n\n    .item-z456:hover .text-v654 {\n      color: var(--highlight-color);\n    }\n\n    @media (max-width: 600px) {\n      .text-v654 {\n        font-size: 16px;\n      }\n    }\n  </style>\n</head>\n\n<body class=\"bdy-a123\">\n  <div class=\"container-x987\">\n\n    <div class=\"item-z456\">\n      <img src=\"https://cdn.shopify.com/s/files/1/0906/0165/2547/files/making-love.png?v=1743635530\"\n           alt=\"Icône passion\"\n           class=\"icon-w321\">\n      <div class=\"text-v654\">\n        <strong>Ajoutez du piquant et surprenez votre partenaire!</strong>\n      </div>\n    </div>\n\n    <div class=\"item-z456\">\n      <img src=\"https://cdn.shopify.com/s/files/1/0906/0165/2547/files/women_bb941f19-2fb1-4932-909f-748b996ec82f.png?v=1743635530\"\n           alt=\"Icône string\"\n           class=\"icon-w321\">\n      <div class=\"text-v654\">\n        <strong>Son prénom sur votre string!</strong>\n      </div>\n    </div>\n\n    <div class=\"item-z456\">\n      <img src=\"https://cdn.shopify.com/s/files/1/0906/0165/2547/files/hand-made-_1.png?v=1743635531\"\n           alt=\"Icône fait main\"\n           class=\"icon-w321\">\n      <div class=\"text-v654\">\n        <strong>100 % fait à la main</strong>\n      </div>\n    </div>\n\n  </div>\n</body>\n</html>"
           }
         },
+        "liquid_gfChat": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div id='ss-size-guide'></div>"
+          }
+        },
         "description": {
           "type": "description",
           "settings": {
@@ -135,6 +141,7 @@
         "payment_terms",
         "separator",
         "liquid_tWdWBX",
+        "liquid_gfChat",
         "description",
         "quantity_selector",
         "liquid_CLPYiM",
@@ -370,19 +377,19 @@
         "text_align": "left",
         "text_align_mobile": "left",
         "modal_overlay_color": "#000000",
-        "modal_bg_color": "#FFFFFF",
+        "modal_bg_color": "#ffffff",
         "modal_border_color": "#000000",
         "close_icon_color": "#000000",
-        "toggles_border_color": "#E5E5E5",
+        "toggles_border_color": "#e5e5e5",
         "title_color": "#000000",
         "title_hover_color": "#000000",
         "title_active_color": "#000000",
-        "title_bg_color": "#F6F8FA",
-        "title_bg_hover_color": "#F6F8FA",
-        "title_bg_active_color": "#FFFFFF",
-        "title_border_color": "#E5E5E5",
-        "title_border_hover_color": "#E5E5E5",
-        "title_border_active_color": "#E5E5E5",
+        "title_bg_color": "#f6f8fa",
+        "title_bg_hover_color": "#f6f8fa",
+        "title_bg_active_color": "#ffffff",
+        "title_border_color": "#e5e5e5",
+        "title_border_hover_color": "#e5e5e5",
+        "title_border_active_color": "#e5e5e5",
         "text_color": "#000000",
         "toggle_color": "#000000",
         "toggle_hover_color": "#555555",
