@@ -370,7 +370,7 @@
         "text_align": "left",
         "text_align_mobile": "left",
         "modal_overlay_color": "#000000",
-        "modal_bg_color": "#ffffff",
+        "modal_bg_color": "rgba(0,0,0,0)",
         "modal_border_color": "#000000",
         "close_icon_color": "#000000",
         "toggles_border_color": "#e5e5e5",
