@@ -339,7 +339,7 @@
         "modal_width": 70,
         "modal_width_mobile": 100,
         "modal_padding_vertical": 18,
-        "modal_padding_vertical_mobile": 12,
+        "modal_padding_vertical_mobile": 0,
         "modal_padding_horizontal": 80,
         "modal_padding_horizontal_mobile": 12,
         "modal_radius": 0,
