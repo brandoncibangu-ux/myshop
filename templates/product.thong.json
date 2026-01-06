@@ -372,7 +372,7 @@
         "modal_overlay_color": "#000000",
         "modal_bg_color": "rgba(0,0,0,0)",
         "modal_border_color": "#000000",
-        "close_icon_color": "#000000",
+        "close_icon_color": "#ffffff",
         "toggles_border_color": "#e5e5e5",
         "title_color": "#000000",
         "title_hover_color": "#000000",
