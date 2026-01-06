@@ -299,6 +299,106 @@
         "spacing": "none"
       }
     },
+    "ss_size_guide_LLPMwY": {
+      "type": "ss-size-guide",
+      "blocks": {
+        "tab_8JY3Qf": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "Sizes",
+            "tab_text": "<p>Tab Text</p>",
+            "size_chart_page": ""
+          }
+        },
+        "tab_8Nnpz7": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "How to measure",
+            "tab_text": "<p><strong>A. CHEST:</strong> Measure around the fullest part of your chest, keeping the measuring tape horizontal.</p><p><strong>B. WAIST:</strong> Measure around the narrowest part (typically where your body bends side to side), keeping the tape horizontal.</p><p><strong>C. HIPS:</strong> Measure around the fullest part of your hips, keeping the tape horizontal.</p>",
+            "size_chart_page": ""
+          }
+        }
+      },
+      "block_order": [
+        "tab_8JY3Qf",
+        "tab_8Nnpz7"
+      ],
+      "name": "SS - Size Guide",
+      "settings": {
+        "guide_position": "above_buy",
+        "toggle": "Guide des tailles",
+        "toggle_custom": false,
+        "toggle_font": "josefin_sans_n4",
+        "toggle_size": 14,
+        "toggle_size_mobile": 14,
+        "toggle_height": 130,
+        "toggle_align": "right",
+        "toggle_align_mobile": "right",
+        "icon_size": 24,
+        "icon_size_mobile": 24,
+        "modal_width": 70,
+        "modal_width_mobile": 95,
+        "modal_padding_vertical": 48,
+        "modal_padding_vertical_mobile": 48,
+        "modal_padding_horizontal": 80,
+        "modal_padding_horizontal_mobile": 24,
+        "modal_radius": 0,
+        "modal_border_thickness": 0,
+        "modal_overlay": 0.3,
+        "close_icon_size": 20,
+        "close_icon_size_mobile": 20,
+        "toggles_border_thickness": 1,
+        "title_padding_vertical": 12,
+        "title_padding_vertical_mobile": 12,
+        "title_padding_horizontal": 20,
+        "title_padding_horizontal_mobile": 20,
+        "title_border_thickness": 1,
+        "title_custom": false,
+        "title_font": "josefin_sans_n4",
+        "title_size": 16,
+        "title_size_mobile": 16,
+        "title_height": 130,
+        "tab_gap": 20,
+        "tab_gap_mobile": 20,
+        "tab_mt": 20,
+        "tab_mt_mobile": 20,
+        "text_custom": false,
+        "text_font": "josefin_sans_n4",
+        "text_size": 14,
+        "text_size_mobile": 14,
+        "text_height": 150,
+        "text_align": "left",
+        "text_align_mobile": "left",
+        "modal_overlay_color": "#000000",
+        "modal_bg_color": "#FFFFFF",
+        "modal_border_color": "#000000",
+        "close_icon_color": "#000000",
+        "toggles_border_color": "#E5E5E5",
+        "title_color": "#000000",
+        "title_hover_color": "#000000",
+        "title_active_color": "#000000",
+        "title_bg_color": "#F6F8FA",
+        "title_bg_hover_color": "#F6F8FA",
+        "title_bg_active_color": "#FFFFFF",
+        "title_border_color": "#E5E5E5",
+        "title_border_hover_color": "#E5E5E5",
+        "title_border_active_color": "#E5E5E5",
+        "text_color": "#000000",
+        "toggle_color": "#000000",
+        "toggle_hover_color": "#555555",
+        "background_color": "",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_horizontal": 0,
+        "padding_horizontal_mobile": 0,
+        "border_thickness": 0,
+        "lazy": true
+      }
+    },
     "rich_text_j6JYgk": {
       "type": "rich-text",
       "blocks": {
@@ -556,106 +656,6 @@
         "background_gradient": "",
         "text_color": ""
       }
-    },
-    "ss_size_guide_LLPMwY": {
-      "type": "ss-size-guide",
-      "blocks": {
-        "tab_8JY3Qf": {
-          "type": "tab",
-          "settings": {
-            "tab_title": "Sizes",
-            "tab_text": "<p>Tab Text</p>",
-            "size_chart_page": ""
-          }
-        },
-        "tab_8Nnpz7": {
-          "type": "tab",
-          "settings": {
-            "tab_title": "How to measure",
-            "tab_text": "<p><strong>A. CHEST:</strong> Measure around the fullest part of your chest, keeping the measuring tape horizontal.</p><p><strong>B. WAIST:</strong> Measure around the narrowest part (typically where your body bends side to side), keeping the tape horizontal.</p><p><strong>C. HIPS:</strong> Measure around the fullest part of your hips, keeping the tape horizontal.</p>",
-            "size_chart_page": ""
-          }
-        }
-      },
-      "block_order": [
-        "tab_8JY3Qf",
-        "tab_8Nnpz7"
-      ],
-      "name": "SS - Size Guide",
-      "settings": {
-        "guide_position": "above_buy",
-        "toggle": "Guide des tailles",
-        "toggle_custom": false,
-        "toggle_font": "josefin_sans_n4",
-        "toggle_size": 14,
-        "toggle_size_mobile": 14,
-        "toggle_height": 130,
-        "toggle_align": "right",
-        "toggle_align_mobile": "right",
-        "icon_size": 24,
-        "icon_size_mobile": 24,
-        "modal_width": 70,
-        "modal_width_mobile": 95,
-        "modal_padding_vertical": 48,
-        "modal_padding_vertical_mobile": 48,
-        "modal_padding_horizontal": 80,
-        "modal_padding_horizontal_mobile": 24,
-        "modal_radius": 0,
-        "modal_border_thickness": 0,
-        "modal_overlay": 0.3,
-        "close_icon_size": 20,
-        "close_icon_size_mobile": 20,
-        "toggles_border_thickness": 1,
-        "title_padding_vertical": 12,
-        "title_padding_vertical_mobile": 12,
-        "title_padding_horizontal": 20,
-        "title_padding_horizontal_mobile": 20,
-        "title_border_thickness": 1,
-        "title_custom": false,
-        "title_font": "josefin_sans_n4",
-        "title_size": 16,
-        "title_size_mobile": 16,
-        "title_height": 130,
-        "tab_gap": 20,
-        "tab_gap_mobile": 20,
-        "tab_mt": 20,
-        "tab_mt_mobile": 20,
-        "text_custom": false,
-        "text_font": "josefin_sans_n4",
-        "text_size": 14,
-        "text_size_mobile": 14,
-        "text_height": 150,
-        "text_align": "left",
-        "text_align_mobile": "left",
-        "modal_overlay_color": "#000000",
-        "modal_bg_color": "#FFFFFF",
-        "modal_border_color": "#000000",
-        "close_icon_color": "#000000",
-        "toggles_border_color": "#E5E5E5",
-        "title_color": "#000000",
-        "title_hover_color": "#000000",
-        "title_active_color": "#000000",
-        "title_bg_color": "#F6F8FA",
-        "title_bg_hover_color": "#F6F8FA",
-        "title_bg_active_color": "#FFFFFF",
-        "title_border_color": "#E5E5E5",
-        "title_border_hover_color": "#E5E5E5",
-        "title_border_active_color": "#E5E5E5",
-        "text_color": "#000000",
-        "toggle_color": "#000000",
-        "toggle_hover_color": "#555555",
-        "background_color": "",
-        "background_gradient": "",
-        "border_color": "#000000",
-        "margin_top": 0,
-        "margin_bottom": 0,
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "padding_horizontal": 0,
-        "padding_horizontal_mobile": 0,
-        "border_thickness": 0,
-        "lazy": true
-      }
     }
   },
   "order": [
@@ -665,6 +665,7 @@
     "176706680818283aea",
     "rich_text_9QgrzY",
     "media_with_text_mFmfUe",
+    "ss_size_guide_LLPMwY",
     "rich_text_j6JYgk",
     "media_with_text_GWBXCX",
     "176695348930e20b4b",
@@ -675,7 +676,6 @@
     "1767074542df87b5ad",
     "rich_text_BYkE9W",
     "slideshow_Qrn73G",
-    "176748578627cee2a6",
-    "ss_size_guide_LLPMwY"
+    "176748578627cee2a6"
   ]
 }
