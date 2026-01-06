@@ -344,7 +344,7 @@
         "modal_padding_horizontal_mobile": 0,
         "modal_radius": 0,
         "modal_border_thickness": 0,
-        "modal_overlay": 0.3,
+        "modal_overlay": 0.2,
         "close_icon_size": 20,
         "close_icon_size_mobile": 20,
         "toggles_border_thickness": 1,
