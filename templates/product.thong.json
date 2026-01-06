@@ -9,6 +9,36 @@
  */
 {
   "sections": {
+    "1767734745afbe53f2": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_44a4b9c_b3DgmQ": {
+          "type": "ai_gen_block_44a4b9c",
+          "settings": {
+            "message": "<p>Expédition rapide et discrète | 25 000+ clients satisfait</p>",
+            "show_icon": false,
+            "icon_type": "megaphone",
+            "icon_size": 18,
+            "dismissible": false,
+            "bar_height": 28,
+            "text_alignment": "center",
+            "font_size": 14,
+            "font_weight": "500",
+            "vertical_padding": 8,
+            "horizontal_padding": 24,
+            "max_width": 1200,
+            "background_color": "#f575b4",
+            "text_color": "#ffffff",
+            "link_color": "#ffffff"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_44a4b9c_b3DgmQ"
+      ],
+      "settings": {}
+    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -659,6 +689,7 @@
     }
   },
   "order": [
+    "1767734745afbe53f2",
     "main",
     "rich_text_eYXb4x",
     "17669779774ba03d69",
