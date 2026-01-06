@@ -361,7 +361,7 @@
         "tab_gap": 20,
         "tab_gap_mobile": 20,
         "tab_mt": 20,
-        "tab_mt_mobile": 20,
+        "tab_mt_mobile": 0,
         "text_custom": false,
         "text_font": "josefin_sans_n4",
         "text_size": 14,
