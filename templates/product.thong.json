@@ -346,7 +346,7 @@
         "modal_border_thickness": 0,
         "modal_overlay": 0.2,
         "close_icon_size": 20,
-        "close_icon_size_mobile": 20,
+        "close_icon_size_mobile": 27,
         "toggles_border_thickness": 1,
         "title_padding_vertical": 12,
         "title_padding_vertical_mobile": 12,
