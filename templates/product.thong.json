@@ -60,15 +60,15 @@
             "liquid": "<strong>NOUVEAU : 👑 Le string le plus viral de 2026!</strong>"
           }
         },
+        "price_CtdK7D": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false
+          }
+        },
         "badges": {
           "type": "badges",
           "settings": {}
-        },
-        "rating": {
-          "type": "rating",
-          "settings": {
-            "show_empty": false
-          }
         },
         "payment_terms": {
           "type": "payment_terms",
@@ -166,8 +166,8 @@
         "liquid_RhcgHx",
         "title",
         "liquid_U3dnmy",
+        "price_CtdK7D",
         "badges",
-        "rating",
         "payment_terms",
         "separator",
         "liquid_tWdWBX",
