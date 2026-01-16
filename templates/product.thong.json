@@ -57,7 +57,7 @@
         "liquid_U3dnmy": {
           "type": "liquid",
           "settings": {
-            "liquid": "<strong>NOUVEAU : 👑 Le string le plus viral de 2026!</strong>"
+            "liquid": "<strong>NOUVEAU : 👑 Le string le plus viral de 2026 pour la Saint-Valentin!</strong>"
           }
         },
         "price_CtdK7D": {
@@ -271,7 +271,7 @@
     "rich_text_9QgrzY": {
       "type": "rich-text",
       "blocks": {
-        "heading_GhVLDp": {
+        "heading_knxNz6": {
           "type": "heading",
           "settings": {
             "text": "Séduisant. Personnalisable. Inoubliable.",
@@ -288,7 +288,7 @@
         }
       },
       "block_order": [
-        "heading_GhVLDp",
+        "heading_knxNz6",
         "richtext_TPQ9pT"
       ],
       "name": "Rich text",
@@ -329,6 +329,75 @@
       },
       "block_order": [
         "image_Me7DDb"
+      ],
+      "name": "Media with text",
+      "settings": {
+        "full_width": false,
+        "alternate_media_position": false,
+        "spacing": "none"
+      }
+    },
+    "rich_text_prgpcW": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_JJHkc7": {
+          "type": "heading",
+          "settings": {
+            "text": "Tous nos string sont faits à la main!",
+            "heading_tag": "h4",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_iQRebh": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Nous personnalisons chaque message ou prénom de ton choix sur la lanière afin de le rendre absolument unique et de surprendre ton/ta partenaire.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_JJHkc7",
+        "richtext_iQRebh"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "media_with_text_cDQGGk": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_P6mypr": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/giphy_2.webp",
+            "media_width": 30,
+            "media_position": "end",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 24,
+            "subheading": "",
+            "title": "",
+            "content": "",
+            "link_text": "",
+            "link_url": "",
+            "background": "#ffffff",
+            "background_gradient": "",
+            "text_color": "#1a1a1a",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_P6mypr"
       ],
       "name": "Media with text",
       "settings": {
@@ -733,6 +802,8 @@
     "176706680818283aea",
     "rich_text_9QgrzY",
     "media_with_text_mFmfUe",
+    "rich_text_prgpcW",
+    "media_with_text_cDQGGk",
     "ss_size_guide_LLPMwY",
     "rich_text_j6JYgk",
     "media_with_text_GWBXCX",
