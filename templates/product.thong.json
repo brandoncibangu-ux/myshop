@@ -139,7 +139,7 @@
             "icon": "picto-coupon",
             "icon_width": 20,
             "title": "Détails",
-            "content": "<ul><li>Lettres A–Z, chiffres 0–9</li><li>Pas d’apostrophe ni de trait d’union</li><li>Métal hypoallergénique : alliage de zinc</li><li>Lavage à la main uniquement</li><li>Emballage discret</li></ul><p><strong>Un doute sur votre personnalisation ? Contactez-nous</strong></p>",
+            "content": "<ul><li>Lettres A–Z, </li><li>Pas d’apostrophe ni de trait d’union</li><li>Métal hypoallergénique : alliage de zinc</li><li>Lavage à la main uniquement</li><li>Emballage discret</li></ul><p><strong>Un doute sur votre personnalisation ? Contactez-nous</strong></p>",
             "page": ""
           }
         },
